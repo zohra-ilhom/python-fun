@@ -16,17 +16,21 @@ tyler = {
   "quizzes": [0.0, 75.0, 78.0],
   "tests": [100.0, 100.0]
 }
-reqeust = input("tell me what item you want to see the averge for by typing one of the following homework, quizzes, tests >> ")
-request = str(request)
+
 students = [lloyd, alice, tyler]
+
+
 for student in students:
-  print student["name"]
-  homework_avg = student["homework"]
-  print(homework_avg)
-  number = len(homework_avg)
-  print("The total number of tests you've done so far equals to " + str(number))
+  homework = student["homework"]
+  print(student["name"], "has the following homework" , homework)
+  number = len(homework)
+  print("# of Homeworks = " + str(number))
   total = 0
-  total = sum(homework_avg)
-  print("all your homework numbers added up sums to " + str(total))
+  total = sum(homework)
+  print("Sum of homework average = " + str(total))
   average = total / number 
   print(int(average))
+
+reqeust = input("tell me what item you want to see the averge for by typing one of the following homework, quizzes, tests >> ")
+request = str(request)
+

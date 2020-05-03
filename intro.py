@@ -34,3 +34,4 @@ for student in students:
 reqeust = input("tell me what item you want to see the averge for by typing one of the following homework, quizzes, tests >> ")
 request = str(request)
 
+print("hello world")

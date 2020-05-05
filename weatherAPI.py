@@ -36,5 +36,4 @@ print('Tempreture feels like: ' + str(response['main']['feels_like']))
 print('Min tempreture: ' + str(response['main']['temp_min']))
 print('Max tempreture: ' + str(response['main']['temp_max']))
 
-#testing SSH key
 

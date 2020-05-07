@@ -1,5 +1,13 @@
 import requests
 import pprint
+import pathlib
+
+
+# I want to open the api key I have saved in a text file that i've added under .gitignore to keep my key private ... say whuuuuut
+with open(pathlib.Path(__file__).parent / 'apikey.txt') as f:
+    appid = f.read()
+    appid = str(appid)
+    
 
 # creating a dictionary of language abbreviations that the api call requires 
 
@@ -23,7 +31,7 @@ for languages in language_list:
     if select_lang == languages:
         lang = language_list[select_lang]
         lang = str(lang)
-        url = 'http://api.openweathermap.org/data/2.5/weather?q=' + select_city + '&appid=fefc84eb710a1684994faf664dcfe26f&lang=' + lang
+        url = 'http://api.openweathermap.org/data/2.5/weather?q=' + select_city + '&appid=' + appid + '&lang=' + lang
 
 r = requests.get(url)
 response = r.json()

@@ -4,6 +4,7 @@ import pathlib
 
 
 # I want to open the api key I have saved in a text file that i've added under .gitignore to keep my key private ... say whuuuuut
+print(pathlib.Path(__file__).parent / 'apikey.txt')
 with open(pathlib.Path(__file__).parent / 'apikey.txt') as f:
     appid = f.read()
     appid = str(appid)
@@ -27,11 +28,8 @@ print("\n")
 
 #creating some logic for when the users language entry matches one of the supported languages that we defined in the dictionary above to append the abbreviation in the API url end point 
 
-for languages in language_list:
-    if select_lang == languages:
-        lang = language_list[select_lang]
-        lang = str(lang)
-        url = 'http://api.openweathermap.org/data/2.5/weather?q=' + select_city + '&appid=' + appid + '&lang=' + lang
+if select_lang in language_list:
+        url = 'http://api.openweathermap.org/data/2.5/weather?q=' + select_city + '&appid=' + appid + '&lang=' + language_list[select_lang] +'&units=metric'
 
 r = requests.get(url)
 response = r.json()

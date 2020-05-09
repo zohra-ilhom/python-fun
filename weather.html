@@ -1,34 +1,8 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <! –– Contents under titl is going to show the copy that shows on the broswer tab ––>
-        <title> Welcome to Weather Website</title>
-        <link rel="stylesheet" href="weatherstyle.css">
-    </head>
-
-    <body>
-       <div class="banner">
-
-           <h1>Welcome to Weather Website</h1>
-           <p>This website will give you today's weather</p>
-           <img class="image" src="weatherlogo.png" alt="weather icon">
-            <a class="buttonstyle" href="#">Look up weather</a>
-    
-       </div>
-
-       <div class="input">
-           <h2>You can input your specifics here</h2>
-           <form action="weatherAPI.py" method="post">
-               <input type="text" name="language" placeholder="Input your language">
-               <input type="text" name="city" placeholder="Input your city">
-               <select name="metric">
-                   <option value="Fehrenhite">Fehrenhite</option>
-                   <option value="celcius">Celcius</option>
-                   
-               </select>
-               
-               <input type="submit" name="submit">
-           </form>
-       </div>
-
-    </body>
+  <head>    
+  </head>
+  <body>
+    <button name="forwardBtn" onclick="move_forward()">Forward</button>
+  </body>
 </html>

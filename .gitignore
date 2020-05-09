@@ -2,3 +2,5 @@ apikey.txt
 openfile.txt
 .DS_Store
 Weatherlogo.png
+intro.py
+weatherAPI.py

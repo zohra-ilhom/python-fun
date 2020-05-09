@@ -1,3 +1,76 @@
-h1 {
-    
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1{
+    font-family: Arial;
+    font-size: 33px;
+
+}
+
+p{
+    padding-bottom: 40px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+
+
+.banner{
+    margin: 0px auto;
+    padding: 20px;
+    height: 35%;
+    width: 100%;
+    overflow: hidden;
+    border: solid;
+    background-color: white;
+    border-color: grey;
+    border-width: 0px 0px 5px 0px;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -20px;
+    left: 60%;
+
+}
+
+.buttonstyle{
+    border: solid;
+    background-color: green;
+    padding: 15px;
+    color: white;
+
+
+}
+
+.input{
+    margin: 0px;
+    padding: 20px;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border: solid;
+    background-color:pink;
+    border-color: black;
+    border-width: 0px 0px 5px 0px;
+}
+
+input {
+    outline: none;
 }

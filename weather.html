@@ -1,8 +1,40 @@
-<!DOCTYPE html>
 <html>
-  <head>    
-  </head>
-  <body>
-    <button name="forwardBtn" onclick="move_forward()">Forward</button>
-  </body>
+    <head>
+        <title> Welcome to Weather Website</title>
+        <link rel="stylesheet" href="weatherstyle.css">
+        <script src="apikey.js"></script>
+        <script src="test.js"></script>
+
+    </head>
+   
+   
+   
+    <body>
+       <div class="banner">
+           <h1>Welcome to Weather Website</h1>
+           <p>This website will give you today's weather</p>
+           <img class="image" src="weatherlogo.png" alt="weather icon">
+            <a class="buttonstyle" href="#">Look up weather</a>
+       </div>
+
+       <div class="input">
+           <h2>You can input your specifics here</h2>
+               <input type="text" id="language" placeholder="Input your language">
+               <input type="text" id="city" placeholder="Input your city">
+               <select id="metric">
+                   <option value="kelvin">kelvin</option>
+                   <option value="celcius">celcius</option>
+                   <option value="fehrenhite">fehrenhite</option>
+               </select>
+               <button onclick="trigger()" id="submit">Click MEE</button>
+
+        </div>
+             
+             
+        <div id="app" class="result"></div>
+
+    
+    </body>
+
+
 </html>

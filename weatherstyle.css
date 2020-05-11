@@ -24,7 +24,6 @@ body {
     width: 100%;
     background-color: white;
     overflow: scroll;
-    overflow-x: hidden;
 }
 
 
@@ -73,4 +72,17 @@ body {
 
 input {
     outline: none;
+}
+
+.result{
+    margin: 0px;
+    padding: 20px;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    border: solid;
+    background-color:plum;
+    border-color: black;
+    border-width: 0px 0px 5px 0px;   
+
 }

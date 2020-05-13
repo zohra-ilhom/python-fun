@@ -10,11 +10,27 @@
    
    
     <body>
+        <div class="navbar">
+            <a onclick="open_nav()" class="nav__link" href="#">Home</a>
+            <a onclick="open_nav()" class="nav__link" href="#">About</a>
+            <a onclick="open_nav()" class="nav__link" href="#">Contact</a>
+            
+        </div>
+
        <div class="banner">
            <h1>Welcome to Weather Website</h1>
            <p>This website will give you today's weather</p>
            <img class="image" src="weatherlogo.png" alt="weather icon">
-            <a class="buttonstyle" href="#">Look up weather</a>
+            <a onclick="open_nav()" class="buttonstyle" href="#">Navigation</a>
+            
+            <script>
+                function open_nav() {
+                    document.querySelector(".navbar").classList.toggle("navbar--open")
+                }
+            </script>
+
+
+
        </div>
 
        <div class="input">

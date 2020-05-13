@@ -1,5 +1,4 @@
 apikey.txt
-openfile.txt
 .DS_Store
 Weatherlogo.png
 intro.py
@@ -8,3 +7,5 @@ abc.js
 apikey.js
 abc.html
 qwe.js
+panel.html
+navbar.css

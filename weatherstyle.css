@@ -1,9 +1,33 @@
-html {
-    margin: 0;
-    padding: 0;
+
+.navbar{
+    top: 0;
+    left: -200;
+    width: 200px;
     height: 100%;
-    width: 100%;
-    overflow: hidden;
+    position: fixed;
+    background-color: lavenderblush;
+    border-right: 2px solid purple;
+    opacity: 0;
+
+}
+
+.navbar--open{
+    left: 0;
+    opacity: 1;
+}
+
+.nav__link{
+    display:flex;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: bold;
+    border-bottom: 1px solid rgb(202, 128, 202);
+    color: black;
+}
+
+.nav__link:active{
+    background: rebeccapurple;
 }
 
 h1{
@@ -51,7 +75,7 @@ body {
 
 .buttonstyle{
     border: solid;
-    background-color: green;
+    background-color: black;
     padding: 15px;
     color: white;
 

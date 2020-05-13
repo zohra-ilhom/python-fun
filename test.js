@@ -17,7 +17,7 @@ var tempreture_measure = {
 }
 
 //console.log(keyFile.appid);
-//testing if the importing the api key from the js file we've added under ignore is working
+//testing if the importing the api key from the js file we've added under .gitignore is working
 
 
 
@@ -27,7 +27,7 @@ function trigger()
     var langs = lang.toLowerCase();
     var city = document.getElementById("city").value;
     var unit_temp = document.getElementById("metric").value;
-    alert("language selected is " + langs + " and city selected is " + city + " and measure is " + unit_temp);
+    //alert("language selected is " + langs + " and city selected is " + city + " and measure is " + unit_temp);
 
     if (langs in language_list) {
         langs_abrv = (language_list[langs]);
@@ -50,25 +50,13 @@ function trigger()
         console.log(response.main)
         console.log(response.main.temp)
         const html = `
-        <p> City: ${response.name} </p>
-        <p> Actual tempreture: ${response.main.temp} </p>
-        <p> Feels like: ${response.main.feels_like} </p>
-        <p> Humidity: ${response.main.humidity} </p>
+        <ul> City: ${response.name} </ul>
+        <ul> Actual tempreture: ${response.main.temp} </ul>
+        <ul> Feels like: ${response.main.feels_like} </ul>
+        <ul> Humidity: ${response.main.humidity} </ul>
             `
         document.querySelector('#app').innerHTML= html;
         });
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-        
 
         
     

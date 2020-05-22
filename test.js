@@ -1,4 +1,35 @@
-//console.log('hello world');
+window.onload = function checkstorage() 
+{
+    var langs_abrv = localStorage.getItem('language');
+    var city = localStorage.getItem('city');
+    var selected_temp = localStorage.getItem('measure');
+
+    //alert(langs_abrv + city + selected_temp);
+
+    var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + keyFile.appid + "&lang=" + langs_abrv + "&units=" + selected_temp ;
+    
+
+    
+    
+    fetch(url)
+    .then(response => {
+        return response.json();
+    })
+    .then(response => {
+        console.log(response.main)
+        console.log(response.main.temp)
+        const html = `
+        <ul> City: ${response.name} </ul>
+        <ul> Actual tempreture: ${response.main.temp} </ul>
+        <ul> Feels like: ${response.main.feels_like} </ul>
+        <ul> Humidity: ${response.main.humidity} </ul>
+            `
+        document.querySelector('#app').innerHTML= html;
+        });
+
+
+};
+
 
 
 var language_list = {

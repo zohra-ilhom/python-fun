@@ -1,4 +1,4 @@
-console.log('hello world');
+//console.log('hello world');
 
 
 var language_list = {
@@ -29,6 +29,11 @@ function trigger()
     var unit_temp = document.getElementById("metric").value;
     //alert("language selected is " + langs + " and city selected is " + city + " and measure is " + unit_temp);
 
+    
+
+
+
+
     if (langs in language_list) {
         langs_abrv = (language_list[langs]);
     }
@@ -38,7 +43,7 @@ function trigger()
     }
 
     var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + keyFile.appid + "&lang=" + langs_abrv + "&units=" + selected_temp ;
-    console.log(url)
+    //console.log(url)
 
     
     
@@ -58,6 +63,19 @@ function trigger()
         document.querySelector('#app').innerHTML= html;
         });
 
-        
+    
+        document.getElementById('weather_form').reset();
+
+        //storing to local storage user input for city, language and measure 
+        localStorage.setItem('language', langs_abrv)
+        localStorage.setItem('city', city)
+        localStorage.setItem('measure', selected_temp)
+        console.log(localStorage);
     
 }
+
+
+// if i change div input-container to a form then the api call doesnt work the first time
+//<form class="input-container" id="weather_form" action="#"> is it becuase of the action ? wtf
+// to reset form after input is submitted 
+//e.preventdefault 

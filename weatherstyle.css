@@ -14,6 +14,7 @@
 .navbar--open{
     left: 0;
     opacity: 1;
+    
 }
 
 .nav__link{
@@ -58,55 +59,95 @@ body {
     height: 35%;
     width: 100%;
     overflow: hidden;
-    border: solid;
-    background-color: white;
-    border-color: grey;
-    border-width: 0px 0px 5px 0px;
+    text-align: center;
+    color:white;
+    background-color: rgb(0, 0, 0);
 }
 
-.image{
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: -20px;
-    left: 60%;
 
-}
 
 .buttonstyle{
-    border: solid;
-    background-color: black;
+    background-color: white;
     padding: 15px;
-    color: white;
+    color: black;
 
+}
+
+.input-container{
+    width: 100%;
+    height: 700px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-image: url("./images/spring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 
 }
 
 .input{
-    margin: 0px;
-    padding: 20px;
-    height: 200px;
-    width: 100%;
-    overflow: hidden;
-    border: solid;
-    background-color:pink;
-    border-color: black;
-    border-width: 0px 0px 5px 0px;
+    
+    width: 50%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-bottom: 3%;
+    background-color: rgba(250, 250, 250, 0.733);
+
 }
 
-input {
-    outline: none;
+.input-data{
+    display: block;
+    padding: 7px;
+    margin: 2% 0 3% 0;
+    text-align: center;
+    border-style: none;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    background-color: transparent;   
+    margin: auto;
+    margin-bottom: 3%;
+    
 }
+
+::placeholder { 
+    color: black;
+    opacity: 0.8; 
+    font-style: italic;
+  }
+
+.input button{
+    color: black;
+    width: 80px;
+    height: 30px;
+    background-color: transparent;
+    font-size: 13px;
+    border: 1px black solid;
+    margin-left: 45%;
+
+
+}
+
+.input button:hover{
+    background-color: black;
+    color: white;
+}
+
+.input button:active{
+    background-color: rgb(29, 28, 28);
+    color: white;
+}
+
+button:focus {outline:0;}
 
 .result{
-    margin: 0px;
-    padding: 20px;
-    height: 400px;
-    width: 100%;
-    overflow: hidden;
-    border: solid;
-    background-color:plum;
-    border-color: black;
-    border-width: 0px 0px 5px 0px;   
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(250, 250, 250, 0.733);
 
+}
+
+h2{
+    text-align: center;
 }

@@ -1,6 +1,8 @@
+  
 <html>
     <head>
         <title> Welcome to Weather Website</title>
+        <link rel="icon" href="./images/cat.png">
         <link rel="stylesheet" href="weatherstyle.css">
         <script src="apikey.js"></script>
         <script src="test.js"></script>
@@ -20,7 +22,6 @@
        <div class="banner">
            <h1>Welcome to Weather Website</h1>
            <p>This website will give you today's weather</p>
-           <img class="image" src="weatherlogo.png" alt="weather icon">
             <a onclick="open_nav()" class="buttonstyle" href="#">Navigation</a>
             
             <script>
@@ -33,24 +34,38 @@
 
        </div>
 
-       <div class="input">
-           <h2>You can input your specifics here</h2>
-               <input type="text" id="language" placeholder="Input your language">
-               <input type="text" id="city" placeholder="Input your city">
-               <select id="metric">
-                   <option value="kelvin">kelvin</option>
-                   <option value="celcius">celcius</option>
-                   <option value="fehrenhite">fehrenhite</option>
-               </select>
-               <button onclick="trigger()" id="submit">Click MEE</button>
 
-        </div>
-             
-             
-        <div id="app" class="result"></div>
+
+       
+       <form class="input-container" id="weather_form" action="#"> 
+
+            <div class="input">
+                <h2>You can input your specifics here</h2>
+                <input class="input-data" type="text" id="language" placeholder="Input your language">
+                <input class="input-data" type="text" id="city" placeholder="Input your city">
+                <select class="input-data" id="metric">
+                    <option value="kelvin">kelvin</option>
+                    <option value="celcius">celcius</option>
+                    <option value="fehrenhite">fehrenhite</option>
+                </select>
+                <button type="button" onclick="trigger()" id="submit">Search</button>
+
+            </div>
+                    
+                    
+            <div id="results" class="result">
+                <h2>Today's Weather</h2>
+                <div id="app"></div>
+            </div>
+
+        </form>
+        
+
+    
 
     
     </body>
 
 
 </html>
+

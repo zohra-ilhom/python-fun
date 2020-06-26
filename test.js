@@ -1,3 +1,8 @@
+window.addEventListener("load", function(){
+    alert("loaded");
+    document.getElementById("spinner").style.opacity = 0;
+})
+
 window.onload = function checkstorage() 
 {
     var langs_abrv = localStorage.getItem('language');
@@ -54,6 +59,13 @@ var tempreture_measure = {
 
 function trigger() 
 {
+    //document.querySelector('#app').append.innerHTML = '<p> testing </p>';
+    //document.querySelector('#app').innerHTML= '<p> testing </p>';
+    //document.getElementById("app").insertAdjacentHTML("afterend", "<h3>This is the text which has been inserted by JS</h3>"); 
+    //document.getElementById("app").insertAdjacentHTML("afterbegin", "<p> loading copy</p>");
+    document.getElementById("tester").innerHTML = '<p> start loading </p>';
+
+
     var lang = document.getElementById("language").value;
     var langs = lang.toLowerCase();
     var city = document.getElementById("city").value;
@@ -92,7 +104,9 @@ function trigger()
         <ul> Humidity: ${response.main.humidity} </ul>
             `
         document.querySelector('#app').innerHTML= html;
-        });
+        document.getElementById("tester").innerHTML = '<p> done loading</p>';
+
+    });
 
     
         document.getElementById('weather_form').reset();

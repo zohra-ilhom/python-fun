@@ -12,6 +12,9 @@
    
    
     <body>
+        <div> 
+            <img id="spinner" class="loader" src="./images/loading-giph.gif" alt="something"/> 
+        </div>
         <div class="navbar">
             <a onclick="open_nav()" class="nav__link" href="#">Home</a>
             <a onclick="open_nav()" class="nav__link" href="file:///Users/zohraabdulrazaq/Documents/Python/about.html">About</a>
@@ -39,7 +42,7 @@
        
        <form class="input-container" id="weather_form" action="#"> 
 
-            <div class="input">
+            <div class="input" >
                 <h2>You can input your specifics here</h2>
                 <input class="input-data" type="text" id="language" placeholder="Input your language">
                 <input class="input-data" type="text" id="city" placeholder="Input your city">
@@ -55,6 +58,7 @@
                     
             <div id="results" class="result">
                 <h2>Today's Weather</h2>
+                <div id="tester"></div>
                 <div id="app"></div>
             </div>
 
@@ -68,4 +72,3 @@
 
 
 </html>
-

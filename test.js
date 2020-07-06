@@ -1,7 +1,9 @@
 window.addEventListener("load", function(){
-    alert("loaded");
+    //alert("loaded");
     document.getElementById("spinner").style.opacity = 0;
 })
+
+
 
 window.onload = function checkstorage() 
 {

@@ -37,7 +37,9 @@ window.onload = function checkstorage()
 
 };
 
-
+function open_nav() {
+    document.querySelector(".navcontainer").classList.toggle('navcontainer--open');
+}
 
 var language_list = {
         'english': "en",
